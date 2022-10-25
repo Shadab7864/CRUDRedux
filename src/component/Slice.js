@@ -25,7 +25,6 @@ export const Slice=createSlice({
         updtEmployee(state,action){
             state.value.map((s,i)=>{
                 if(s.Id===action.payload.Id){
-                    // s.Id=action.payload.Id;
                     s.Name=action.payload.Name;
                     s.Email=action.payload.Email;
                     s.RegdNo=action.payload.RegdNo;

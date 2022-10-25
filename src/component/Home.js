@@ -1,4 +1,4 @@
-// import { Button } from "bootstrap"
+
 import React from "react"
 import { Button } from "react-bootstrap"
 import { Link } from "react-router-dom"
@@ -13,7 +13,6 @@ export default function Home() {
         <div>
             <div>
                 <h3>Crud application using React-Redux</h3>
-                {/* <Button type="button" class="btn btn-dark">Add Employee </Button> */}
                 <Link to="/Add"> <Button variant="outline-secondary" size="sm">Add Employee</Button></Link>
             </div>
             <div>

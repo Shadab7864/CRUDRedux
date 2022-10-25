@@ -17,12 +17,9 @@ function Update() {
   const show = useSelector((state) => state.add.value)
   const param = useParams()
   const user = show.filter((show) => show.Id === param.Id)
-  // console.log(user)
+
 
   const { Id, Name, Email, RegdNo } = user[0];
-
-
-  // alert(ild);
   return (
     <div>
       <h1>Enter Details to be updated </h1>
@@ -37,22 +34,7 @@ function Update() {
 
 
 
-        {/* {show.map((s, i) => {
-          return (
-            <div key={i} >
-              
-                <TextField id="outlined-basic" variant="outlined" label="Enter ID" size="small" value={Id} onChange={(e) => { setId(e.target.value) }} />
-                <TextField id="outlined-basic" variant="outlined" label="Enter Name" size="small" value={name} onChange={(e) => { setName(e.target.value) }} />
-                <TextField id="outlined-basic" variant="outlined" label="Enter Email" size="small" value={email} onChange={(e) => { setEmail(e.target.value) }} />
-                <TextField id="outlined-basic" variant="outlined" label="Enter Registration No " value={regdNo} size="small" onChange={(e) => { setRegdNo(e.target.value) }} /><br />
-                <Link to="/"> <Button variant="outline-info" onClick={() => {
-                  dispatch(updtEmployee({ id, Name, Email, RegdNo }))
-                }}>Update Details</Button></Link><br /><br />
-
-            </div>
-      )
-
-        })} */}
+        
       </div>
     </div >
   )
